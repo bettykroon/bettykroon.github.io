@@ -1,0 +1,129 @@
+<!--
+Betty Kroon
+2021-11-10
+HTML och CSS, projektarbete
+
+Denna sida är projektets startsida som innehåller mitt CV med meny som tar dig 
+till de resterande sidorna av projektet
+-->
+
+<!doctype html>
+<html class="no-js" lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Betty Kroon - Portfolio </title>
+  <meta name="description" content="Betty Kroons portfolio innehållande CV, personligt brev, kontaktformulär.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="CV, front end developer, personligt brev, örnsköldsvik, kontakt">
+  <meta property="og:title" content="Betty Kroons portfolio">
+  <meta property="og:description" content="Betty Kroons portfolio innehållande CV, personligt brev, kontaktformulär.">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href='scss/style.css'>
+  <link rel="apple-touch-icon" href='icon.png'>
+  <link rel="preconnect" href='https://fonts.googleapis.com'>
+  <link rel="preconnect" href='https://fonts.gstatic.com' crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <!-- Header samt hamburgermeny -->
+    <header>
+      <h1>Mitt CV</h1>
+      <a class="hamburger" href="#navbar" aria-label="open main menu">
+      <i class="fas fa-bars"></i></a>
+        
+    </header>
+
+    <nav id="navbar">
+      <ul>
+          <li><a href='index.html'>Hem</a></li>
+          <li><a href='personligtBrev.html'>Personligt brev</a></li>
+          <li><a href='kontakt.html'>Kontakt</a></li>
+      </ul>
+      <a class="close" href="#" aria-label="close main menu">
+      <i class="fas fa-times"></i></a>
+    </nav>
+    
+    <section class="main-section">
+      <!-- Sektion med bild på mig samt mina kontaktuppgifter -->
+      <aside class="left">
+        <img src='img/BettyKroon.jpeg' alt="Bild på mig" width="500" height="667">
+        <h2>Betty Kroon</h2>
+        <p>Storgatan 24B</p>
+        <p>891 33, Örnsköldsvik</p>
+        <p>1999-04-13</p>
+        <p><a href='tel:+46706952912'>070-695 29 12</a></p>
+        <p><a href='mailto:betty.kroon@hotmail.com'>betty.kroon@hotmail.com</a></p><br>
+      </aside>
+
+      <!-- Mitt CV -->
+      <section class="right">
+        <hr class="top-divider">
+        <h2>UTBILDNING</h2>
+        <article>
+          <h3>GYMNASIUM, NOLASKOLAN - EKONOMI, 2015-2018</h3>
+          <h3>UNIVERSITET, MITTUNIVERSITETET - DATATEKNIK, 2019-2021</h3>
+          <h3>YRKESHÖGSKOLA, MEDIEINSTITUTET - FRONT END DEVELOPER, 2021-2023</h3>
+        </article>
+        <hr class="divider">
+        <h2>ERFARENHET</h2>
+        <article>
+          <h3>SÄLJARE, ICA SUPERMARKET SJÄLEVAD - 2017-2018</h3>
+          <p> I ett års tid har jag jobbat på ICA Supermarket i Själevad som butiksbiträde. 
+            Där har jag fått stor kassavana genom att dels sitta i vanlig kassa och även i förbutik. 
+            Där har jag fått lära mig att hantera många olika kunders behov och sett till att vara så 
+            serviceinriktad som möjligt.
+          </p>
+          <h3>KIOSK- OCH BARPERSONAL, FJÄLLRÄVEN CENTER - 2015-2019</h3>
+          <p>I fyra år har jag jobbat för Modo på Fjällräven center. De två första åren jobbade jag i 
+            kiosk där det var ett högt tempo. Där fick jag min kassavana från första början och mötte 
+            många olika kunder. Under de två senare åren jobbade jag i baren då jag hade åldern inne,  
+            även där högt tempo och mycket kunder.
+          </p>
+          <h3>SÄLJARE, H&M - 2018-NUTID</h3>
+          <p>Sen 2018 har jag jobbat som säljare på H&M i Oskargallerian. Där har jag packat upp varor, 
+            larmat kläder, jobbat i själva butiken och i kassan.
+          </p>
+          <h3>FÖRSKOLLÄRARE - HÖSTEN 2018</h3>
+          <p>Under hösten 2018 jobbade jag som förskollärare på olika förskolor i Örnsköldsvik för att jag 
+            skulle få möjligheten att åka som au pair, då man behöver ett visst antal timmar med barn.
+          </p>
+          <h3>AU PAIR MELBOURNE, AUSTRALIEN - VÅREN 2019</h3>
+          <p>Från februari 2019 till slutet av juni 2019 flyttade jag till Melbourne, Australien och jobbade 
+            som au pair till tre små grabbar (6,4 & 3 år). 
+          </p>
+        </article>
+        <hr class="divider">
+        <h2>ÖVRIGA MERITER</h2>
+        <article>
+          <h3>UF-FÖRETAG</h3>
+          <p>Under sista året på Nolaskolan har jag och mina kompisar drivit ett UF-företag. Där har jag varit 
+            ekonomiansvarig och lärt mig att ta mycket ansvar och fått större förståelse för hur det är att driva företag.
+          </p>
+          <h3>KÖRKORT</h3>
+        </article>
+        <hr class="divider">
+        <h2>REFERENSER</h2>
+        <article>
+          <h3>REFERENS 1</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <h3>REFERENS 2</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <!-- Footer längst ned på sidan med länkar till min LinkedIn och FaceBook -->
+  <footer>
+    <h2>Skapad av Betty Kroon</h2>
+    <a href='https://www.linkedin.com/in/betty-kroon-709223204/' aria-label="linkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href='https://www.facebook.com/betty.kroon' aria-label="FaceBook"><i class="fab fa-facebook-square"></i></a>
+  </footer>
+
+  <!-- För att kunna använda ikoner -->
+  <script src='https://kit.fontawesome.com/46c7602c18.js' crossorigin="anonymous"></script>
+</body>
+</html>

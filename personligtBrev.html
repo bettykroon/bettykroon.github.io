@@ -1,0 +1,93 @@
+<!--
+Betty Kroon
+2021-11-10
+HTML och CSS, projektarbete
+
+På denna sida finns mitt personliga brev
+-->
+
+<!doctype html>
+<html class="no-js" lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Betty Kroon - Portfolio </title>
+  <meta name="description" content="Betty Kroons portfolio innehållande CV, personligt brev, kontaktformulär.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="CV, front end developer, personligt brev, örnsköldsvik, kontakt">
+  <meta property="og:title" content="Betty Kroons portfolio">
+  <meta property="og:description" content="Betty Kroons portfolio innehållande CV, personligt brev, kontaktformulär.">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href='scss/style.css'>
+  <link rel="apple-touch-icon" href='icon.png'>
+  <link rel="preconnect" href='https://fonts.googleapis.com'>
+  <link rel="preconnect" href='https://fonts.gstatic.com' crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <!-- Header samt hamburgermeny -->
+    <header>
+      <h1>Mitt personliga brev</h1>
+      <a class="hamburger" href="#navbar" aria-label="open main menu">
+      <i class="fas fa-bars"></i></a>
+    </header>
+
+    <nav id="navbar">
+      <ul>
+          <li><a href='index.html'>Hem</a></li>
+          <li><a href='personligtBrev.html'>Personligt brev</a></li>
+          <li><a href='kontakt.html'>Kontakt</a></li>
+      </ul>
+      <a class="close" href="#" aria-label="close main menu">
+      <i class="fas fa-times"></i></a>
+    </nav>
+    
+    <section class="main-section">
+      <!-- Sektion med bild på mig samt mina kontaktuppgifter -->
+      <aside class="left">
+        <img src='img/BettyKroon.jpeg' alt="Bild på mig" width="500" height="667">
+        <h2>Betty Kroon</h2>
+        <p>Storgatan 24B</p>
+        <p>891 33, Örnsköldsvik</p>
+        <p>1999-04-13</p>
+        <p><a href='tel:+46706952912'>070-695 29 12</a></p>
+        <p><a href='mailto:betty.kroon@hotmail.com'>betty.kroon@hotmail.com</a></p><br>
+      </aside>
+
+      <!-- Mitt personliga brev -->
+      <section class="right">
+        <hr class="top-divider">
+        <h2>OM MIG</h2>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
+            in a piece of classical Latin literature from 45 BC, making it over 2000 years 
+            old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, 
+            looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum 
+            passage, and going through the cites of the word in classical literature, 
+            discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 
+            and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) 
+            by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, 
+            very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum 
+            dolor sit amet..", comes from a line in section 1.10.32.
+
+          The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those 
+          interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by 
+          Cicero are also reproduced in their exact original form, accompanied by English 
+          versions from the 1914 translation by H. Rackham.
+        </p>
+      </section>
+    </section>
+  </main>
+
+  <!-- Footer längst ned på sidan med länkar till min LinkedIn och FaceBook -->
+  <footer>
+    <h2>Skapad av Betty Kroon</h2>
+    <a href='https://www.linkedin.com/in/betty-kroon-709223204/' aria-label="linkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href='https://www.facebook.com/betty.kroon' aria-label="FaceBook"><i class="fab fa-facebook-square"></i></a>
+  </footer>
+
+  <!-- För att kunna använda ikoner -->
+  <script src='https://kit.fontawesome.com/46c7602c18.js' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+/*
+Betty Kroon
+2021-11-10
+HTML och CSS, projektarbete
+
+På denna sida importerar jag samtliga scss filer som ska finnas med i projektet
+*/
+
+@import '_normalize';
+
+@import '_main';
+
+// CSS för desktop, media queries min-width: 1024px
+@media screen and (min-width: 1024px) {
+    @import '_desktop';
+}
+
+// CSS för hela sidan, utgått från mobil läge
+@import '_base';

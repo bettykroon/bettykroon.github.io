@@ -1,0 +1,47 @@
+/*
+Betty Kroon
+2021-11-10
+HTML och CSS, projektarbete
+
+CSS för desktop-läge
+*/
+
+.main-section {
+    display: flex;
+}
+
+.left {
+    width: 40%;
+    background-color: #ffe6cc;
+    padding: 0;
+    margin: 0;
+    img {
+        max-width: 60%;
+    }
+}
+
+section {
+    .top-divider {
+        display: none;
+    }
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 62%;
+    transform: translate( -50%, -50%);
+    width: calc(1536px / 6);
+    height: 256px;
+    background: url("../img/run.png");
+    animation: animate 1s steps(6) infinite;
+}
+
+@keyframes animate{
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -1536px;
+    }
+}

@@ -1,0 +1,185 @@
+/*
+Betty Kroon
+2021-11-10
+HTML och CSS, projektarbete
+
+Sidans CSS som utgår från mobil-läge
+*/
+
+body {
+    background-image: url('../img/bg.jpeg');
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 90vw;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'Anton', sans-serif;;
+    h1 {
+        padding-left: 10px;
+    }
+    .hamburger {
+        color: white;
+        font-size: 2rem;
+        padding-right: 10px;
+    }
+}
+
+nav {
+    background-color: #ffe6cc;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+    &:target {
+        transform: translateY(0);
+    }
+    ul {
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 2rem;
+        display: flex;
+    }
+    a {
+        color: black;
+        font-weight: 600;
+        display: block;
+        padding: 20px;
+        &:hover {
+            color: #d9b99b;
+        }
+    }
+    .close {
+        font-size: 2rem;
+    }
+}
+
+aside {
+    width: 100%;
+    text-align: center;
+    img {
+        max-width: 50%;
+        height: auto;
+        padding-top: 20px;
+    }
+    a {
+        color: black;
+    }
+}
+
+section {
+    width: 100%;
+    h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .top-divider {
+        max-width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .divider {
+        max-width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+}
+
+article {
+    width: 100%;
+    h3 {
+        font-size: 1rem;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+}
+
+form {
+    border-radius: 5px;
+    padding: 20px;
+    input[type=text], 
+    input[type=email], 
+    textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        width: 100%;
+        background-color: #c6b2a4;
+        color: black;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color: black;
+        color: #c6b2a4;
+    }
+}
+
+footer {
+    width: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin-top: auto;
+    a {
+        font-size: 2rem;
+        color: white;
+    }
+}
+
+.thanks {
+    p {
+        text-align: center;
+    }
+}
